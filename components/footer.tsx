@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { TreesIcon as Lungs, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from "lucide-react"
 import AutoScrollingServices from "./AutoScrollingServices"
 
@@ -11,8 +12,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* About */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <img src="/logo-white.png" alt="Logo" width={300} height={200} />
+            <div className="flex items-center gap-2 mb-4 relative w-[300px] h-[80px]">
+              <Image 
+                src="/logo-white.png" 
+                alt="Logo" 
+                fill
+                priority
+                className="object-contain"
+              />
             </div>
             <p className="text-white mb-4">
               Specialist in Pulmonary Care, Critical Care, and Sleep Medicine with over 10 years of experience.
