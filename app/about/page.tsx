@@ -46,7 +46,7 @@ export default function AboutPage() {
             >
               <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/dr-arjun.jpeg"
+                  src="/dr-arjun.webp"
                   alt="Dr. Arjun Ramaswamy"
                   fill
                   className="object-cover"
@@ -327,7 +327,7 @@ export default function AboutPage() {
             >
               <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/thinking.jpg"
+                  src="/thinking.webp"
                   alt="Dr. Arjun with patient"
                   fill
                   className="object-cover"

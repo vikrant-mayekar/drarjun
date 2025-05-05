@@ -15,19 +15,19 @@ export default function GalleryPreview() {
 
   const galleryImages = [
     {
-      src: "/gallery/1.jpg",
+      src: "/gallery/01.jpg",
       alt: "Clinic Exterior",
     },
     {
-      src: "/gallery/2.jpg",
+      src: "/gallery/02.jpg",
       alt: "Consultation Room",
     },
     {
-      src: "/gallery/3.jpg",
+      src: "/gallery/04.jpg",
       alt: "Advanced Medical Equipment",
     },
     {
-      src: "/gallery/4.jpg",
+      src: "/gallery/06.jpg",
       alt: "Dr. Arjun with Patient",
     },
   ]

@@ -69,7 +69,7 @@ export default function Header() {
 >
   <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
     <Link href="/" className="flex items-center gap-2">
-      <img src="/logo.png" alt="Dr. Arjun Ramaswamy" className="h-20 w-auto" />
+      <img src="/logo-arjun.png" alt="Dr. Arjun Ramaswamy" className="h-20 w-auto" />
     </Link>
 
         {/* Desktop Navigation */}

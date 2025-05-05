@@ -11,64 +11,56 @@ export default function GalleryPage() {
 
   const galleryImages = [
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Clinic Exterior",
-      category: "Clinic",
+      src: "/gallery/01.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Consultation Room",
-      category: "Clinic",
+      src: "/gallery/02.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Advanced Medical Equipment",
-      category: "Equipment",
+      src: "/gallery/04.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Dr. Arjun with Patient",
-      category: "Patient Care",
+      src: "/gallery/06.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Bronchoscopy Procedure",
-      category: "Procedures",
+      src: "/gallery/14.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Sleep Study Setup",
-      category: "Sleep Medicine",
+      src: "/gallery/18.jpg",
+      alt: "",
+      category: "",
+    },
+    
+    {
+      src: "/gallery/10.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Pulmonary Function Testing",
-      category: "Diagnostics",
+      src: "/gallery/19.jpg",
+      alt: "",
+      category: "",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Team of Medical Professionals",
-      category: "Team",
+      src: "/gallery/12.jpg",
+      alt: "",
+      category: "",
     },
+    
     {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Patient Education Session",
-      category: "Education",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Critical Care Unit",
-      category: "Critical Care",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Dr. Arjun at Medical Conference",
-      category: "Professional",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      alt: "Telemedicine Consultation",
-      category: "Telemedicine",
+      src: "/gallery/14.jpg",
+      alt: "",
+      category: "",
     },
   ]
 

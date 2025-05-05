@@ -151,7 +151,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          
+
         </motion.div>
       </section>
 
@@ -175,7 +175,7 @@ export default function Home() {
             <div className="relative group w-full max-w-md">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-700 to-yellow-400 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/dr-report.jpg"
+                src="/image.webp"
                 alt="Dr. Arjun in clinic"
                 width={600}
                 height={320}
@@ -252,7 +252,7 @@ export default function Home() {
             {/* Center Image */}
             <div className="mx-8 my-8 lg:my-0 z-20">
               <div className="w-64 h-64 rounded-full bg-white flex items-center justify-center shadow-lg border-4 border-blue-100 overflow-hidden">
-                <Image src="/lung-home.png" alt="Tooth" width={450} height={450} className="object-contain w-64 h-64" />
+                <Image src="/lung-home.webp" alt="Tooth" width={450} height={450} className="object-contain w-64 h-64" />
               </div>
             </div>
             {/* Right Cards */}
@@ -287,7 +287,7 @@ export default function Home() {
               className="bg-white rounded-3xl shadow-xl p-6 flex-1 flex flex-col items-start max-w-sm mx-auto border-2 border-blue-100 hover:border-blue-400 transition-all duration-300 group"
             >
               <div className="w-full h-48 rounded-2xl overflow-hidden mb-6 relative">
-                <Image src="/astma.jpg" alt="Well Equipped Hospital" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/astma.webp" alt="Well Equipped Hospital" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-blue-900">Asthma</h3>
               <p className="text-gray-600 text-base">Asthma is a chronic condition that causes inflammation and narrowing of the airways, making it difficult to breathe. It can be triggered by various factors, including allergens, irritants, and exercise.</p>
@@ -307,7 +307,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2 text-blue-900">COPD ( Emphysema & Chronic Bronchicctasis )</h3>
               <p className="text-gray-600 text-base mb-4">COPD is a chronic condition that causes inflammation and scarring of the lung tissue, making it difficult to breathe. It can be caused by various factors, including genetics, environment, and lifestyle.</p>
               <div className="w-full h-48 rounded-2xl overflow-hidden relative mt-auto">
-                <Image src="/COPD.jpg" alt="Operation Theater" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/COPD.webp" alt="Operation Theater" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <Button asChild className="mt-4 bg-yellow-400 hover:bg-yellow-600 hover:text-white rounded-full px-8 py-4 text-base font-medium text-black transition-all duration-300 transform hover:scale-105 border-0 shadow-md">
                 <Link href="/services/copd">Get More Details</Link>
@@ -323,7 +323,7 @@ export default function Home() {
               className="bg-white rounded-3xl shadow-xl p-6 flex-1 flex flex-col items-start max-w-sm mx-auto border-2 border-blue-100 hover:border-pink-400 transition-all duration-300 group"
             >
               <div className="w-full h-48 rounded-2xl overflow-hidden mb-6 relative">
-                <Image src="/pulmonary.jpg" alt="Mediclaim Facilities" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/pulmonary.webp" alt="Mediclaim Facilities" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-blue-900">Pulmonary Function Test</h3>
               <p className="text-gray-600 text-base">PFT is a test that measures the amount of air that can be inhaled and exhaled, and the speed at which air can be inhaled and exhaled. It is a type of test that is used to diagnose and monitor various lung conditions.</p>
@@ -364,7 +364,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold mb-2 text-blue-900">Tuberculosis</h3>
               <p className="text-gray-600 text-base mb-4">Tuberculosis is a bacterial infection that can cause respiratory illness. It is caused by the tuberculosis bacteria, which is a type of bacteria that can infect humans and animals.</p>
               <div className="w-full h-48 rounded-2xl overflow-hidden relative mt-auto">
-                <Image src="/tuberculosis.jpg" alt="Operation Theater" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/tuberculosis.webp" alt="Operation Theater" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <Button asChild className="mt-4 bg-yellow-400 hover:bg-yellow-600 hover:text-white rounded-full px-8 py-4 text-base font-medium text-black transition-all duration-300 transform hover:scale-105 border-0 shadow-md">
                 <Link href="/services/tuberculosis">Get More Details</Link>
@@ -380,7 +380,7 @@ export default function Home() {
               className="bg-white rounded-3xl shadow-xl p-6 flex-1 flex flex-col items-start max-w-sm mx-auto border-2 border-blue-100 hover:border-pink-400 transition-all duration-300 group"
             >
               <div className="w-full h-48 rounded-2xl overflow-hidden mb-6 relative">
-                <Image src="/obstructive.jpg" alt="Mediclaim Facilities" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                <Image src="/obstructive.webp" alt="Mediclaim Facilities" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-blue-900">Obstructive Sleep Apnes & Sleep Disorders</h3>
               <p className="text-gray-600 text-base">Obstructive sleep apnea in adults is a condition that causes the upper airway to collapse during sleep, which can lead to snoring, daytime sleepiness, and other health problems.</p>
