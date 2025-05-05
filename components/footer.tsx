@@ -17,6 +17,7 @@ export default function Footer() {
             <p className="text-white mb-4">
               Specialist in Pulmonary Care, Critical Care, and Sleep Medicine with over 10 years of experience.
             </p>
+            
             <div className="flex space-x-4">
               <Link href="#" className="text-white hover:text-yellow-500 transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -140,7 +141,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-yellow-500 flex-shrink-0" />
-                <span className="text-white hover:text-yellow-500 transition-colors">+91 XXXXX XXXXX</span>
+                <span className="text-white hover:text-yellow-500 transition-colors">+91 9833857855</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-yellow-500 flex-shrink-0" />
@@ -152,14 +153,6 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-white text-sm">
           <p>&copy; {new Date().getFullYear()} Dr. Arjun Ramaswamy. All rights reserved.</p>
-          <div className="mt-2 space-x-4">
-            <Link href="#" className="hover:text-yellow-500 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="hover:text-yellow-500 transition-colors">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

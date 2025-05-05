@@ -134,7 +134,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors duration-300">Phone</h3>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                          Clinic: +91 XXXXX XXXXX
+                          Clinic: +91 9833857855
                         </p>
                       </div>
                     </CardContent>
@@ -172,9 +172,9 @@ export default function ContactPage() {
                       <div>
                         <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors duration-300">Clinic Hours</h3>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                          Monday - Friday: 9:00 AM - 6:00 PM
+                        Apollo Hospital:  Monday - Saturday: 9:00 AM - 4:00 PM
                           <br />
-                          Saturday: 9:00 AM - 2:00 PM
+                          Clinic: Monday - Saturday: 5:00 PM - 7:00 PM
                           <br />
                           Sunday: Closed
                         </p>

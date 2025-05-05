@@ -172,9 +172,9 @@ export default function AboutPage() {
                 <GraduationCap className="h-6 w-6 text-white" />
               </div>
               <div className="space-y-3 mt-4">
-                <h3 className="text-xl font-bold text-gray-900">DM (Critical Care Medicine)</h3>
+                <h3 className="text-xl font-bold text-gray-900">DM (Pulmonary, Critical Care & Sleep Medicine)</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Advanced specialization in Critical Care Medicine, with training in managing complex respiratory conditions in intensive care settings.
+                  Advanced specialization in Pulmonary, Critical Care & Sleep Medicine, with training in managing complex respiratory conditions in intensive care settings.
                 </p>
               </div>
             </motion.div>
@@ -191,7 +191,7 @@ export default function AboutPage() {
                 <GraduationCap className="h-6 w-6 text-white" />
               </div>
               <div className="space-y-3 mt-4">
-                <h3 className="text-xl font-bold text-gray-900">MRCP (UK)</h3>
+                <h3 className="text-xl font-bold text-gray-900">MRCP - SCE</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Member of the Royal College of Physicians, demonstrating international standard of medical excellence.
                 </p>
