@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { TreesIcon as Lungs, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { TreesIcon as Lungs, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, MessageCircle } from "lucide-react"
 import AutoScrollingServices from "./AutoScrollingServices"
 
 export default function Footer() {
@@ -141,11 +141,21 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-yellow-500 flex-shrink-0" />
-                <span className="text-white hover:text-yellow-500 transition-colors">+91 9833857855</span>
+                <a href="tel:+919833857855" className="text-white hover:text-yellow-500 transition-colors flex items-center gap-2">
+                  +91 9833857855
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="h-5 w-5 text-yellow-500 flex-shrink-0" />
+                <a href="https://wa.me/919833857855" target="_blank" rel="noopener noreferrer" className="text-white hover:text-yellow-500 transition-colors flex items-center gap-2">
+                  Chat on WhatsApp
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-yellow-500 flex-shrink-0" />
-                <span className="text-white hover:text-yellow-500 transition-colors">arjun567.ar@gmail.com</span>
+                <a href="mailto:arjun567.ar@gmail.com" className="text-white hover:text-yellow-500 transition-colors">
+                  arjun567.ar@gmail.com
+                </a>
               </li>
             </ul>
           </div>
