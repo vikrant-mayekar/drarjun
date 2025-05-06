@@ -21,13 +21,24 @@ export default function SwineFluPage() {
     <main className="flex min-h-screen flex-col">
       {/* Banner Section */}
       <section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/images/swine-flu-banner.jpg"
-          alt="Swine Flu (H1N1) Care"
-          fill
-          className="object-cover"
-          priority
-        />
+                 {/* Mobile Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
         <div className="absolute inset-0 bg-black/50 flex items-center">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <motion.div
@@ -181,8 +192,11 @@ export default function SwineFluPage() {
                 Swine Flu is caused by the H1N1 strain of the influenza virus. It spreads easily from person to person through coughing, sneezing, or touching contaminated surfaces. While most cases are mild, H1N1 can cause severe respiratory illness, especially in high-risk groups.
               </p>
             </div>
-            <img src="/services/swine-flu.png" alt="Swine Flu" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
-            
+            <img
+  src="/services/6.jpg"
+  alt="6-Minute Walk Test"
+  className="w-full h-[200px] rounded-lg shadow-lg object-cover object-center mb-4"
+/>
             {/* Symptoms Section */}
             <div className="mb-4 bg-gray-100 p-4 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Common Symptoms of Swine Flu</h2>

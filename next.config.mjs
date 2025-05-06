@@ -21,6 +21,7 @@ const nextConfig = {
   compress: true,
   // Minimize JavaScript in production
   swcMinify: true,
+  output: "export",
   // Configure webpack for optimizations
   webpack: (config, { dev, isServer }) => {
     // Optimize production builds

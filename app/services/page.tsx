@@ -19,34 +19,26 @@ export default function ServicesPage() {
 
   return (
     <main className="flex min-h-screen flex-col">
-     {/* Banner Section */}
-     <section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/images/6mwt-banner.jpg"
-          alt="6-Minute Walk Test"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50 flex items-center">
-          <div className="container mx-auto px-4 md:px-8 lg:px-16">
-            <motion.div
-              className="text-white max-w-3xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Specialized Services</h1>
-              <p className="text-lg md:text-xl mb-8">
-                Comprehensive care for respiratory, sleep, and critical care conditions with a patient-centered approach and state-of-the-art treatments.
-              </p>
-              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50 rounded-full px-8">
-                <Link href="/appointment">Book an Appointment</Link>
-              </Button>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+<section className="relative w-full aspect-[16/5] sm:h-[400px] md:h-[500px]">
+  {/* Mobile Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
+</section>
       <AutoScrollingServices />
      
       <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-white via-blue-50 to-blue-100">

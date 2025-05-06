@@ -21,13 +21,24 @@ export default function ObstructiveSleepApneaPage() {
     <main className="flex min-h-screen flex-col">
       {/* Banner Section */}
       <section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/images/sleep-apnea-banner.jpg"
-          alt="Obstructive Sleep Apnea Care"
-          fill
-          className="object-cover"
-          priority
-        />
+                  {/* Mobile Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
         <div className="absolute inset-0 bg-black/50 flex items-center">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <motion.div
@@ -181,8 +192,11 @@ export default function ObstructiveSleepApneaPage() {
                 Obstructive Sleep Apnea is a sleep disorder where the airway becomes partially or completely blocked repeatedly during sleep, causing you to stop breathing for several seconds at a time. This leads to poor-quality sleep, low oxygen levels, and serious health risks if left untreated.
               </p>
             </div>
-            <img src="/services/sleep-apnea.png" alt="Sleep Apnea" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
-            
+            <img
+  src="/services/6.jpg"
+  alt="6-Minute Walk Test"
+  className="w-full h-[200px] rounded-lg shadow-lg object-cover object-center mb-4"
+/>
             {/* Symptoms Section */}
             <div className="mb-4 bg-gray-100 p-4 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Common Symptoms of OSA in Adults</h2>

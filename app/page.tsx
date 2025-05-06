@@ -1,22 +1,14 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronRight, Award, Heart, Clock, Shield } from "lucide-react"
-import ServiceCarousel from "@/components/service-carousel"
+import { ChevronRight, Award, Heart,Shield } from "lucide-react"
 import TestimonialSection from "@/components/testimonial-section"
 import GalleryPreview from "@/components/gallery-preview"
 import { AutoScrollingServices } from "@/components/AutoScrollingServices"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+
 import { useState } from "react"
 
 export default function Home() {
@@ -30,20 +22,7 @@ export default function Home() {
     },
   }
 
-  const heroImages = [
-    {
-      src: "/logo.png",
-      alt: "Dr. Arjun Ramaswamy - Pulmonologist",
-    },
-    {
-      src: "/hero-bg.png",
-      alt: "Clinic Consultation Room",
-    },
-    {
-      src: "/lungs.webp",
-      alt: "Advanced Medical Equipment",
-    },
-  ]
+
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -389,11 +368,7 @@ export default function Home() {
               </Button>
             </motion.div>
           </div>
-          <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch mb-4">
-            <Button asChild className="mt-4 bg-yellow-400 hover:bg-yellow-600 hover:text-white rounded-full px-8 py-4 text-base font-medium text-black transition-all duration-300 transform hover:scale-105 border-0 shadow-md">
-              <Link href="/services">View All Services</Link>
-            </Button>
-          </div>
+          
         </div>
       </section>
 

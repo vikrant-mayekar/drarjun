@@ -21,16 +21,26 @@ export default function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col">
 {/* Banner Section */}
-<section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/slider/s2.jpeg"
-          alt="Asthma Care"
-          fill
-          className="object-cover"
-          priority
-        />
-          
-      </section>
+<section className="relative w-full aspect-[16/5] sm:h-[400px] md:h-[500px]">
+  {/* Mobile Image */}
+  <Image
+    src="/slider/m2.jpeg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/slider/s2.jpeg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
+</section>
       <AutoScrollingServices />
 
 
@@ -191,7 +201,7 @@ export default function AboutPage() {
                 <GraduationCap className="h-6 w-6 text-white" />
               </div>
               <div className="space-y-3 mt-4">
-                <h3 className="text-xl font-bold text-gray-900">MRCP - SCE</h3>
+                <h3 className="text-xl font-bold text-gray-900">MRCP (UK) - SCE</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Member of the Royal College of Physicians, demonstrating international standard of medical excellence.
                 </p>

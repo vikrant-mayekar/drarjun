@@ -23,13 +23,42 @@ export default function SixMinuteWalkTestPage() {
     <main className="flex min-h-screen flex-col">
       {/* Banner Section */}
       <section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/slider/s2.jpeg"
-          alt="6-Minute Walk Test"
-          fill
-          className="object-cover"
-          priority
-        />
+          {/* Mobile Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
+  <div className="absolute inset-0 bg-black/50 flex items-center">
+          <div className="container mx-auto px-4 md:px-8 lg:px-16">
+            <motion.div
+              className="text-white max-w-3xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">6-Minute Walk Test in Navi Mumbai</h1>
+              <p className="text-lg md:text-xl mb-8">
+              Assess Your Cardiopulmonary Endurance with the 6-Minute Walk Test
+              </p>
+              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50 rounded-full px-8">
+                <Link href="/appointment">Book Your Appointment</Link>
+              </Button>
+            </motion.div>
+          </div>
+        </div>
       </section>
       <AutoScrollingServices />
 
@@ -172,7 +201,11 @@ export default function SixMinuteWalkTestPage() {
                 <li>Disease progression and treatment effectiveness</li>
               </ul>
             </div>
-            <img src="/services/6mwt.png" alt="6-Minute Walk Test" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
+            <img
+  src="/services/6.jpg"
+  alt="6-Minute Walk Test"
+  className="w-full h-[200px] rounded-lg shadow-lg object-cover object-center mb-4"
+/>
             
             {/* Test Applications Section */}
             <div className="mb-4 bg-gray-100 p-4 rounded-lg">

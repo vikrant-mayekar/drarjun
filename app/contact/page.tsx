@@ -52,17 +52,26 @@ export default function ContactPage() {
 
   return (
     <main className="flex min-h-screen flex-col">
-{/* Banner Section */}
-<section className="relative w-full h-[400px] md:h-[500px]">
-    <Image
-          src="/slider/s3.jpeg"
-          alt="Asthma Care"
-          fill
-          className="object-cover"
-          priority
-        />
-         
-      </section>
+<section className="relative w-full aspect-[16/5] sm:h-[400px] md:h-[500px]">
+  {/* Mobile Image */}
+  <Image
+    src="/slider/s3.jpeg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/slider/s3.jpeg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
+</section>
       <AutoScrollingServices />
 
      

@@ -21,13 +21,24 @@ export default function VaccinationPage() {
     <main className="flex min-h-screen flex-col">
       {/* Banner Section */}
       <section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/images/vaccination-banner.jpg"
-          alt="Vaccination Services"
-          fill
-          className="object-cover"
-          priority
-        />
+                  {/* Mobile Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
         <div className="absolute inset-0 bg-black/50 flex items-center">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <motion.div
@@ -180,8 +191,11 @@ export default function VaccinationPage() {
                   Prevent Illness. Build Immunity. Stay Protected. At Our Clinic, we offer a full range of vaccination services for children, adults, seniors, and travelers. Vaccines are one of the most effective ways to prevent serious illnesses and promote long-term health. Whether you need routine immunizations or travel-specific vaccines, our team ensures safe, timely, and evidence-based vaccination.
                 </p>
               </div>
-              <img src="/services/vaccination.png" alt="Vaccination Services" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
-
+              <img
+  src="/services/6.jpg"
+  alt="6-Minute Walk Test"
+  className="w-full h-[200px] rounded-lg shadow-lg object-cover object-center mb-4"
+/>
               {/* Why Important */}
               <div className="mb-4 bg-gray-100 p-4 rounded-lg">
                 <h2 className="text-2xl font-bold mb-4">Why Are Vaccines Important?</h2>

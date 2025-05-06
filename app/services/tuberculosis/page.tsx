@@ -21,13 +21,24 @@ export default function TuberculosisPage() {
     <main className="flex min-h-screen flex-col">
       {/* Banner Section */}
       <section className="relative w-full h-[400px] md:h-[500px]">
-        <Image
-          src="/images/tuberculosis-banner.jpg"
-          alt="Tuberculosis Care"
-          fill
-          className="object-cover"
-          priority
-        />
+                 {/* Mobile Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care Mobile"
+    fill
+    className="object-cover object-center block sm:hidden"
+    priority
+    sizes="100vw"
+  />
+  {/* Tablet/Desktop Image */}
+  <Image
+    src="/services/1.jpg"
+    alt="Asthma Care"
+    fill
+    className="object-cover object-center hidden sm:block"
+    priority
+    sizes="(min-width: 640px) 100vw, 0vw"
+  />
         <div className="absolute inset-0 bg-black/50 flex items-center">
           <div className="container mx-auto px-4 md:px-8 lg:px-16">
             <motion.div
@@ -50,7 +61,7 @@ export default function TuberculosisPage() {
       <AutoScrollingServices />
       <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-r from-cyan-900/20 via-cyan-600/20 to-cyan-900/20">
       <div className="container mx-auto">
-        <img src="/services/3.svg" alt="Services" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
+        <img src="/services/2.svg" alt="Services" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar */}
           <div className="w-full md:w-1/4 rounded-lg p-4">
@@ -184,8 +195,11 @@ export default function TuberculosisPage() {
                 TB spreads through airborne droplets when an infected person coughs or sneezes.
               </p>
             </div>
-            <img src="/services/tuberculosis.png" alt="Tuberculosis" className="w-full h-auto rounded-lg shadow-lg position-center top-0 left-0 mb-4" />
-            
+            <img
+  src="/services/6.jpg"
+  alt="6-Minute Walk Test"
+  className="w-full h-[200px] rounded-lg shadow-lg object-cover object-center mb-4"
+/>
             {/* Symptoms Section */}
             <div className="mb-4 bg-gray-100 p-4 rounded-lg">
               <h2 className="text-2xl font-bold mb-4">Common Symptoms of TB</h2>

@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 import { format } from "date-fns"
-import { getAppointments } from "./actions"
 import { Loader2 } from "lucide-react"
 
 type Appointment = {
@@ -26,29 +25,7 @@ export default function AppointmentsPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  useEffect(() => {
-    async function loadAppointments() {
-      try {
-        setLoading(true)
-        const data = await getAppointments()
-
-        // Add status field (in a real app, this would come from the database)
-        const appointmentsWithStatus = data.map((appointment) => ({
-          ...appointment,
-          status: "pending" as const,
-        }))
-
-        setAppointments(appointmentsWithStatus)
-      } catch (err) {
-        console.error("Failed to load appointments:", err)
-        setError("Failed to load appointments. Please try again later.")
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    loadAppointments()
-  }, [])
+ 
 
   // Function to get service name from service code
   const getServiceName = (serviceCode: string) => {
